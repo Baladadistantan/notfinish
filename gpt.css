@@ -1,0 +1,153 @@
+body {
+    background-image: url('lp2.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#gpt {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease forwards; /* Add animation to fade in */
+}
+
+/* Landing Page Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Activities Section Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    animation: slideIn 1s ease forwards; /* Add animation to slide in */
+}
+
+.activity-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    width: 200px; /* Set a fixed width for all buttons */
+    animation: fadeInBtn 0.5s ease forwards; /* Add animation to fade in */
+}
+
+.activity-btn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1); /* Add hover effect */
+}
+
+@keyframes fadeInBtn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Position About and Contact buttons */
+#gpt a {
+    position: absolute;
+    top: 20px;
+}
+
+a[href="about-section.html"] {
+    right: 20px;
+}
+
+a[href="contact-section.html"] {
+    right: 100px;
+}
+
+/* "Don't Click It!" Button Animation */
+.dodge-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed; /* Change cursor to indicate not clickable */
+    animation: dodgeAnimation 2s linear infinite alternate;
+    pointer-events: none; /* Disable pointer events */
+}
+
+@keyframes dodgeAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+/* Default styles for all screen sizes */
+body {
+    background-image: url('lp2.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for screens larger than 768px */
+@media screen and (min-width: 768px) {
+    #gpt h1 {
+        font-size: 48px;
+    }
+
+    .activity-btn {
+        width: 250px; /* Increase button width for larger screens */
+    }
+}
+
+/* Styles for screens larger than 1200px */
+@media screen and (min-width: 1200px) {
+    #gpt h1 {
+        font-size: 64px;
+    }
+
+    .activity-btn {
+        width: 300px; /* Further increase button width for extra-large screens */
+    }
+}

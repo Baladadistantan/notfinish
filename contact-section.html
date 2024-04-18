@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #333333, #000000);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        #contact-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .back-btn {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .back-btn:hover {
+            background-color: white;
+            color: black;
+            transform: translateY(-3px);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+        }
+        /* For larger screens */
+@media screen and (min-width: 768px) {
+  /* Adjust styles for larger screens */
+}
+
+/* For smaller screens */
+@media screen and (max-width: 767px) {
+  /* Adjust styles for smaller screens */
+  body {
+    font-size: 16px; /* Example of using relative font size */
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div id="contact-section">
+        <h2>Contact</h2>
+        <a href="https://www.facebook.com/johnwayne.baladad/">Visit my Facebook</a> <!-- Replace with your actual Facebook link -->
+        <a href="gpt.html" class="back-btn">Back</a>
+    </div>
+    
+</body>
+</html>

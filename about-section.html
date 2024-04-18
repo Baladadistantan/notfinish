@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #333333, #000000);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        #about-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .back-btn {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .back-btn:hover {
+            background-color: white;
+            color: black;
+            transform: translateY(-3px);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+        }
+        /* For larger screens */
+@media screen and (min-width: 768px) {
+  /* Adjust styles for larger screens */
+}
+
+/* For smaller screens */
+@media screen and (max-width: 767px) {
+  /* Adjust styles for smaller screens */
+  body {
+    font-size: 16px; /* Example of using relative font size */
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div id="about-section">
+        <h2>About</h2>
+        <p>Hello! I am John Wayne Baladad from BSCPE-601 Computer Engineering.</p>
+        <p>This website is my first venture into web development, created using HTML and CSS with the help of online tools and AI.</p>
+        <p>Here, I compile all my activities from prelim, midterm, pre-final, and finals.</p>
+        <a href="gpt.html" class="back-btn">Back</a>
+    </div>
+</body>
+</html>
